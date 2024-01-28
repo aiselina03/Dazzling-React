@@ -1,0 +1,101 @@
+.footer {
+  width: 100%;
+  height: 60vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ccc;
+
+  .foot1 {
+    background-color: #313233;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    .other {
+      line-height: 45px;
+      ul {
+        li {
+          border-bottom: 1px solid #ccc;
+          cursor: pointer;
+          transition: all 600ms;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .logo {
+      img {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 25px;
+        width: 340px;
+        font-size: 14px;
+      }
+    }
+  }
+  .foot2 {
+    background-color: #1f1f1f;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      li {
+        cursor: pointer;
+        transition: all 600ms;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .footer {
+    height: auto;
+    .foot1 {
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      padding: 20px 0;
+      .logo {
+        img {
+          width: 170px;
+          padding: 30px;
+          margin-bottom: 0px;
+        }
+        p {
+          line-height: 25px;
+          width: 290px;
+          font-size: 14px;
+        }
+      }
+    }
+    .foot2 {
+      height: auto;
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+}

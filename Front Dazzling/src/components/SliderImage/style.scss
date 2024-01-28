@@ -1,0 +1,111 @@
+.slick-next {
+  right: 20px;
+}
+.slick-prev {
+  left: 20px;
+  z-index: 2;
+}
+
+.slick-dots {
+  bottom: 60px;
+}
+
+.sliderImage {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .photo {
+    position: relative;
+    .text {
+      position: absolute;
+      top: 35%;
+      left: 10%;
+      color: white;
+      .title {
+        width: 500px;
+        height: 30px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(31, 166, 122, 0.7);
+        h2 {
+          font-weight: 300;
+          font-size: 23px;
+        }
+      }
+      .info {
+        width: 700px;
+        padding: 25px;
+        background: rgba(59, 59, 59, 0.8);
+        line-height: 30px;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 15vh;
+    background-color: #1fa67a;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      color: white;
+      font-size: 20px;
+    }
+    button {
+      color: white;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 8px;
+      width: 200px;
+      height: 40px;
+      padding: 25px 15px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 600ms;
+      &:hover {
+        background-color: white;
+        color: #1fa67a;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .slick-dots {
+    bottom: 30px;
+  }
+  .sliderImage {
+    .photo {
+      width: 100%;
+      height: 30vh;
+      position: static;
+      img {
+        height: 30vh;
+      }
+      .text {
+        display: none;
+      }
+    }
+    .line {
+      height: auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+      button {
+        width: 150px;
+        height: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}
